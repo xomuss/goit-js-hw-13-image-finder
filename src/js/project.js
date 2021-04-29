@@ -25,11 +25,6 @@ function onSearch(e) {
 
 function onLoadMore() {
   apiService.fetchArticles().then(appendHitsMarkup);
-  window.scrollTo({
-    top: 100,
-    left: 500,
-    behavior: 'auto',
-  });
 }
 
 function appendHitsMarkup(hits) {
