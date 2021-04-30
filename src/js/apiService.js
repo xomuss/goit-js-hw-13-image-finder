@@ -14,6 +14,9 @@ export default class ApiService {
         this.page += 1;
 
         return data.hits;
+      })
+      .catch(error => {
+        alert('error');
       });
   }
 
